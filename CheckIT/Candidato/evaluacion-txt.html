@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckIT - Pregunta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body id="checkit-pregunta">
+    <div class="header">
+        <div class="logo">Santander</div>
+        <div class="timer">
+            <img src="imagen/icon-tiempo.png" alt="Icono Tiempo" width="14" height="17">
+            11:55
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <button class="next-button">Siguiente</button>
+    </div>
+    <div class="container">
+        <div class="question-container">
+            <div class="question">
+                <h2>Pregunta</h2>
+                <p>¿Qué hace la función <code>append()</code> en una lista?</p>
+                <p>Elige la respuesta correcta</p>
+            </div>
+            <div class="options">
+                <div class="options-title">
+                    <h2>Seleccione una sola respuesta</h2>
+                </div>
+                <ul>
+                    <li>
+                        <label>
+                            <input type="radio" name="answer" value="1">
+                            <div class="option-container">Devuelve el tamaño de la lista.</div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="answer" value="2">
+                            <div class="option-container">Agrega un elemento al final de la lista.</div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="answer" value="3">
+                            <div class="option-container">Elimina un elemento de la lista.</div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="answer" value="4">
+                            <div class="option-container">Inserta un elemento en una posición específica.</div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="imagen/lg-checkIT.png" alt="CheckIT Logo">
+    </div>
+    <script>
+        document.querySelectorAll('.option-container').forEach(option => {
+            option.addEventListener('dblclick', function() {
+                if (this.classList.contains('doubt')) {
+                    this.classList.remove('doubt');
+                } else {
+                    this.classList.add('doubt');
+                }
+            });
+        });
+    </script>
+</body>

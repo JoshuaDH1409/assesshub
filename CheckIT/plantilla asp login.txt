@@ -1,0 +1,12 @@
+<%--<asp:Login ID="Login1" runat="server" FailureText="credenciales incorrectas">
+    <LayoutTemplate>
+        <asp:Image ID="imgLogo" runat="server" ImageUrl="imagen/logo-checIT.png" CssClass="img" />
+        
+        <asp:Label ID="UserNameLabel" runat="server" Text="Usuario" CssClass="control-label"></asp:Label>
+        <asp:TextBox ID="UserName" runat="server" CssClass=""></asp:TextBox>
+
+        <asp:Label ID="PasswordLabel" runat="server" Text="Contraseña" CssClass="control-label"></asp:Label>
+        <asp:TextBox ID="Password" runat="server"></asp:TextBox>
+
+    </LayoutTemplate>           
+</asp:Login>--%>
