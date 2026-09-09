@@ -2,6 +2,14 @@
 
 Plataforma de evaluación / examen de candidatos (ASP.NET Web Forms).
 
+<!-- screenshots -->
+## Vista
+
+![Login candidato](docs/screenshots/login.png)
+
+![Instrucciones](docs/screenshots/instrucciones.png)
+
+
 ## Qué hace
 
 - **Candidatos:** login, instrucciones, preguntas (texto o imagen) y temporizador
