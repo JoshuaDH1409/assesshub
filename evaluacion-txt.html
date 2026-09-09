@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssessHub — Pregunta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="assesshub-pregunta">
+    <div class="header">
+        <div class="logo">AssessHub</div>
+        <div class="timer">
+            <img src="imagen/icon-tiempo.png" alt="Icono tiempo" width="14" height="17">
+            11:55
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <button class="next-button" type="button">Siguiente</button>
+    </div>
+    <div class="container">
+        <div class="question-container">
+            <div class="question">
+                <h2>Pregunta</h2>
+                <p>¿Qué hace la función <code>append()</code> en una lista?</p>
+                <p>Elige la respuesta correcta</p>
+            </div>
+            <div class="options">
+                <div class="options-title">
+                    <h2>Seleccione una sola respuesta</h2>
+                </div>
+                <ul>
+                    <li>
+                        <label>
+                            <input type="radio" name="answer" value="1">
+                            <div class="option-container">Devuelve el tamaño de la lista.</div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="answer" value="2">
+                            <div class="option-container">Agrega un elemento al final de la lista.</div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="answer" value="3">
+                            <div class="option-container">Elimina un elemento de la lista.</div>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="answer" value="4">
+                            <div class="option-container">Inserta un elemento en una posición específica.</div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="imagen/logo-assesshub.svg" alt="AssessHub">
+    </div>
+    <script>
+        document.querySelectorAll('.option-container').forEach(option => {
+            option.addEventListener('dblclick', function() {
+                this.classList.toggle('doubt');
+            });
+        });
+    </script>
+  <div style="max-width:720px;margin:1rem auto;padding:0 1rem;text-align:right;">
+    <a href="evaluaciones-img.html" style="display:inline-block;background:#2563eb;color:#fff;padding:.75rem 1.1rem;border-radius:10px;text-decoration:none;font-weight:600;">Siguiente</a>
+  </div>
+</body>
+</html>

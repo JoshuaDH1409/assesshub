@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320">
+  <rect width="480" height="320" rx="20" fill="#fff" stroke="#cbd5e1"/>
+  <text x="24" y="40" font-family="Inter,Arial" font-size="16" font-weight="700" fill="#0f172a">Opción D</text>
+  <rect x="150" y="140" width="90" height="90" rx="12" fill="#eab308"/><circle cx="310" cy="185" r="45" fill="#ef4444"/>
+</svg>

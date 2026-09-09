@@ -1,0 +1,512 @@
+/* AssessHub — UI candidato / login (portfolio) */
+
+:root {
+    --ah-bg: #f1f5f9;
+    --ah-surface: #ffffff;
+    --ah-ink: #0f172a;
+    --ah-muted: #64748b;
+    --ah-primary: #2563eb;
+    --ah-primary-dark: #1d4ed8;
+    --ah-accent: #0ea5e9;
+    --ah-border: #e2e8f0;
+    --ah-radius: 14px;
+    --ah-shadow: 0 12px 40px rgba(15, 23, 42, 0.12);
+}
+
+/* LOGIN */
+.login-page {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(145deg, #0f172a 0%, #1e3a8a 45%, #0284c7 100%);
+    box-sizing: border-box;
+}
+
+.login-page .container {
+    display: flex;
+    max-width: 980px;
+    width: 100%;
+    box-shadow: var(--ah-shadow);
+    background-color: var(--ah-surface);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.login-page .login-form {
+    flex: 1;
+    padding: 48px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.login-page .brand-mark,
+.login-page .login-form img {
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+.login-page .brand-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: -0.03em;
+    color: var(--ah-ink);
+    margin: 0 0 8px;
+}
+
+.login-page .brand-sub {
+    color: var(--ah-muted);
+    font-size: 14px;
+    margin: 0 0 16px;
+    text-align: center;
+}
+
+.login-page .login-form input[type="text"],
+.login-page .login-form input[type="email"],
+.login-page .login-form input[type="password"],
+.login-page .email-input,
+.login-page .password-input {
+    width: 100%;
+    max-width: 320px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    border: 1px solid var(--ah-border);
+    border-radius: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.login-page .login-form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.login-page .login-form a,
+.login-page .login-form a:visited {
+    color: var(--ah-primary);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.login-page .login-form button,
+.login-page .login-form input[type="submit"],
+.login-page .login-form .btn,
+.login-page #Login1 input[type="submit"] {
+    width: 100%;
+    max-width: 320px;
+    padding: 12px;
+    background: linear-gradient(135deg, var(--ah-primary), var(--ah-accent));
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.login-page .login-form button:hover,
+.login-page #Login1 input[type="submit"]:hover {
+    background: var(--ah-primary-dark);
+}
+
+.login-page h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-page .login-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 320px;
+    font-size: 13px;
+    color: var(--ah-muted);
+}
+
+.login-page .image-section {
+    flex: 1;
+    background:
+        radial-gradient(circle at 30% 30%, rgba(96, 165, 250, 0.45), transparent 50%),
+        linear-gradient(160deg, #1e40af, #0ea5e9);
+    min-height: 520px;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.login-page .image-section::after {
+    content: "Evaluaciones claras. Resultados confiables.";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.35;
+    max-width: 280px;
+}
+
+@media (max-width: 768px) {
+    .login-page .container {
+        flex-direction: column;
+    }
+
+    .login-page .image-section {
+        display: none;
+    }
+}
+
+/* INSTRUCCIONES */
+.instructions-page {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    background-color: var(--ah-bg);
+    color: var(--ah-ink);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.instructions-page h1,
+.instructions-page h2,
+.instructions-page h3,
+.instructions-page h4,
+.instructions-page h5,
+.instructions-page h6 {
+    font-family: 'Inter', sans-serif;
+}
+
+.instructions-page .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+    box-sizing: border-box;
+}
+
+.instructions-page .header .logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ah-primary);
+    letter-spacing: -0.02em;
+}
+
+.instructions-page .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px 20px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.instructions-page .instructions-container {
+    background-color: #fff;
+    padding: 28px;
+    border-radius: var(--ah-radius);
+    box-shadow: var(--ah-shadow);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.instructions-page .instructions-left,
+.instructions-page .instructions-right {
+    width: 48%;
+}
+
+.instructions-page .instructions {
+    font-size: 16px;
+    line-height: 1.65;
+    color: #334155;
+}
+
+.instructions-page .footer {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 16px 0;
+    width: 100%;
+    color: var(--ah-muted);
+    font-weight: 600;
+}
+
+.instructions-page .footer img {
+    max-height: 36px;
+}
+
+.instructions-page .start-button {
+    background-color: var(--ah-primary);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.instructions-page .start-button:hover {
+    background-color: var(--ah-primary-dark);
+}
+
+@media screen and (max-width: 600px) {
+    .instructions-page .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .instructions-page .instructions-container {
+        flex-direction: column;
+    }
+    .instructions-page .instructions-left,
+    .instructions-page .instructions-right {
+        width: 100%;
+    }
+}
+
+/* EVALUACIONES */
+body#assesshub-pregunta {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    background-color: var(--ah-bg);
+    color: var(--ah-ink);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+body#assesshub-pregunta h1,
+body#assesshub-pregunta h2,
+body#assesshub-pregunta h3,
+body#assesshub-pregunta h4,
+body#assesshub-pregunta h5,
+body#assesshub-pregunta h6 {
+    font-family: 'Inter', sans-serif;
+}
+
+body#assesshub-pregunta .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+    box-sizing: border-box;
+    gap: 16px;
+}
+
+body#assesshub-pregunta .header .logo {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: var(--ah-primary);
+    letter-spacing: -0.02em;
+}
+
+body#assesshub-pregunta .header .timer {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+    color: var(--ah-muted);
+}
+
+body#assesshub-pregunta .header .timer img {
+    margin-right: 5px;
+}
+
+body#assesshub-pregunta .progress-bar {
+    flex-grow: 1;
+    height: 6px;
+    background-color: #e2e8f0;
+    margin-left: 8px;
+    margin-right: 8px;
+    position: relative;
+    max-width: 150px;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+body#assesshub-pregunta .progress {
+    width: 50%;
+    height: 100%;
+    background-color: #22c55e;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body#assesshub-pregunta .header .next-button {
+    background-color: var(--ah-primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+body#assesshub-pregunta .header .next-button:hover {
+    background-color: var(--ah-primary-dark);
+}
+
+body#assesshub-pregunta .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 20px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+body#assesshub-pregunta .question-container {
+    background-color: #fff;
+    padding: 28px;
+    border-radius: var(--ah-radius);
+    box-shadow: var(--ah-shadow);
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    gap: 24px;
+}
+
+body#assesshub-pregunta .question {
+    flex: 2;
+    min-width: 280px;
+    padding-right: 8px;
+    box-sizing: border-box;
+}
+
+body#assesshub-pregunta .question img {
+    width: 100%;
+    max-width: 50vw;
+    height: auto;
+    border-radius: 12px;
+}
+
+body#assesshub-pregunta .options {
+    flex: 3;
+    list-style-type: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body#assesshub-pregunta .options ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+body#assesshub-pregunta .options li {
+    margin-bottom: 12px;
+}
+
+body#assesshub-pregunta .option-container {
+    border: 1px solid var(--ah-border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+body#assesshub-pregunta .option-container img {
+    width: 100%;
+    max-width: 30vw;
+    height: auto;
+    border-radius: 8px;
+}
+
+body#assesshub-pregunta .options input[type="radio"] {
+    display: none;
+}
+
+body#assesshub-pregunta .options input[type="radio"]:checked + .option-container {
+    background-color: #eff6ff;
+    border-color: var(--ah-primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+body#assesshub-pregunta .option-container.doubt {
+    background-color: #fffbeb;
+    border-color: #f59e0b;
+}
+
+body#assesshub-pregunta .footer {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 16px 0;
+    width: 100%;
+    color: var(--ah-muted);
+    font-weight: 600;
+}
+
+body#assesshub-pregunta .footer img {
+    max-height: 36px;
+}
+
+body#assesshub-pregunta .options-title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    body#assesshub-pregunta .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    body#assesshub-pregunta .header .timer {
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+    body#assesshub-pregunta .progress-bar {
+        width: 100%;
+        margin: 10px 0;
+    }
+    body#assesshub-pregunta .question-container {
+        flex-direction: column;
+        padding: 16px;
+    }
+    body#assesshub-pregunta .question,
+    body#assesshub-pregunta .options {
+        min-width: 100%;
+        padding: 0;
+    }
+    body#assesshub-pregunta .header .next-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    body#assesshub-pregunta .question img,
+    body#assesshub-pregunta .option-container img {
+        max-width: 90vw;
+    }
+}
