@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" rx="24" fill="#f8fafc"/>
+  <rect x="16" y="16" width="608" height="328" rx="20" fill="#fff" stroke="#3b82f6" stroke-width="3"/>
+  <text x="40" y="56" font-family="Inter,Arial" font-size="18" font-weight="700" fill="#0f172a">Serie: elige la figura que sigue</text>
+  <rect x="60" y="140" width="90" height="90" rx="12" fill="#3b82f6"/>
+  <circle cx="235" cy="185" r="45" fill="#0ea5e9"/>
+  <polygon points="350,230 395,140 440,230" fill="#6366f1"/>
+  <rect x="490" y="140" width="90" height="90" rx="12" fill="#e2e8f0" stroke="#94a3b8" stroke-dasharray="6 4"/>
+  <text x="522" y="195" font-family="Inter,Arial" font-size="28" fill="#64748b">?</text>
+</svg>
