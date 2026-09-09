@@ -7,6 +7,19 @@ Plataforma de evaluación / examen de candidatos (ASP.NET Web Forms).
 <!-- screenshots -->
 ## Vista
 
+![Login](docs/screenshots/login.png)
+
+![Instrucciones](docs/screenshots/instrucciones.png)
+
+![Evaluación texto](docs/screenshots/eval-txt.png)
+
+![Evaluación figuras](docs/screenshots/eval-img.png)
+
+**Demo:** https://joshuadh1409.github.io/assesshub/
+
+
+## Vista
+
 ![Login candidato](docs/screenshots/login.png)
 
 ![Instrucciones](docs/screenshots/instrucciones.png)
