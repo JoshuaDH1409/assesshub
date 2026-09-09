@@ -23,11 +23,11 @@
         </Columns>
         
     </asp:GridView>
-    <asp:SqlDataSource ID="sdsCandidatos" runat="server" ConnectionString="<%$ ConnectionStrings:etexamen %>" SelectCommand="Select Candidato_id, Candidato_nombre, Candidato_apellidoP, Candidato_email from Candidatos where Supervisor_id = @supervisor">
+    <asp:SqlDataSource ID="sdsCandidatos" runat="server" ConnectionString="<%$ ConnectionStrings:AssessHubDB %>" SelectCommand="Select Candidato_id, Candidato_nombre, Candidato_apellidoP, Candidato_email from Candidatos where Supervisor_id = @supervisor">
         <SelectParameters>
             <asp:SessionParameter SessionField="Supervisor_id" Name="supervisor"></asp:SessionParameter>
         </SelectParameters>
     </asp:SqlDataSource>
-    <asp:SqlDataSource ID="sdsCalificacion" runat="server" ConnectionString="<%$ ConnectionStrings:etexamen %>" SelectCommand="select Examen_nombre, Examen_resultado, Candidato_id from Examenes left join ExamenCandidato on Examenes.Examen_id = ExamenCandidato.Examen_id"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="sdsCalificacion" runat="server" ConnectionString="<%$ ConnectionStrings:AssessHubDB %>" SelectCommand="select Examen_nombre, Examen_resultado, Candidato_id from Examenes left join ExamenCandidato on Examenes.Examen_id = ExamenCandidato.Examen_id"></asp:SqlDataSource>
 </asp:Content>
 
